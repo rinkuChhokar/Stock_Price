@@ -24,7 +24,7 @@ if tickerSymbol == 'Google':
 
 	st.write(f"""
 
-	Shown are the stock **closing price** and **volume** of {tickerSymbol}!
+	Choose Start and End Date of {tickerSymbol} stock price below!
 
 	""")
 
@@ -42,8 +42,10 @@ if tickerSymbol == 'Google':
 
 	tickerDf = tickerData.history(period='1d',start=d,end=d1)
 
+	st.subheader("Closing Price")
 	st.line_chart(tickerDf.Close)
 
+	st.subheader("Volume Price")
 	st.line_chart(tickerDf.Volume)
 
 
@@ -52,7 +54,7 @@ if tickerSymbol == 'Amazon':
 
 	st.write(f"""
 
-	Shown are the stock **closing price** and **volume** of {tickerSymbol}!
+	Choose Start and End Date of {tickerSymbol} stock price below!
 
 	""")
 
@@ -68,8 +70,10 @@ if tickerSymbol == 'Amazon':
 
 	tickerDf = tickerData.history(period='1d',start=d,end=d1)
 
+	st.subheader("Closing Price")
 	st.line_chart(tickerDf.Close)
 
+	st.subheader("Volume Price")
 	st.line_chart(tickerDf.Volume)
 
 
@@ -79,7 +83,7 @@ if tickerSymbol == 'Facebook':
 
 	st.write(f"""
 
-	Shown are the stock **closing price** and **volume** of {tickerSymbol}!
+	Choose Start and End Date of {tickerSymbol} stock price below!
 
 	""")
 
@@ -95,8 +99,10 @@ if tickerSymbol == 'Facebook':
 
 	tickerDf = tickerData.history(period='1d',start=d,end=d1)
 
+	st.subheader("Closing Price")
 	st.line_chart(tickerDf.Close)
 
+	st.subheader("Volume Price")
 	st.line_chart(tickerDf.Volume)
 
 
@@ -104,7 +110,7 @@ if tickerSymbol == 'Apple':
 
 	st.write(f"""
 
-	Shown are the stock **closing price** and **volume** of {tickerSymbol}!
+	Choose Start and End Date of {tickerSymbol} stock price below!
 
 	""")
 
@@ -120,8 +126,10 @@ if tickerSymbol == 'Apple':
 
 	tickerDf = tickerData.history(period='1d',start=d,end=d1)
 
+	st.subheader("Closing Price")
 	st.line_chart(tickerDf.Close)
 
+	st.subheader("Volume Price")
 	st.line_chart(tickerDf.Volume)
 
 
@@ -130,7 +138,7 @@ if tickerSymbol == 'Netflix':
 
 	st.write(f"""
 
-	Shown are the stock **closing price** and **volume** of {tickerSymbol}!
+	Choose Start and End Date of {tickerSymbol} stock price below!
 
 	""")
 
@@ -146,8 +154,10 @@ if tickerSymbol == 'Netflix':
 
 	tickerDf = tickerData.history(period='1d',start=d,end=d1)
 
+	st.subheader("Closing Price")
 	st.line_chart(tickerDf.Close)
 
+	st.subheader("Volume Price")
 	st.line_chart(tickerDf.Volume)
 
 
